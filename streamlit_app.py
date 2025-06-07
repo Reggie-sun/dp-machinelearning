@@ -10,6 +10,6 @@ with st.expander("Data"):
   df
 x=df.drop("species",axis=1)
 y=df['species']
-st.write(x)
-st.write(y)
-  
+
+with st.expander('Data visualization')
+  st.st.scatter_chart(df,x,y,x='bill_length_mm',y='body_mass_g',color='species')
