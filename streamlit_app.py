@@ -12,4 +12,11 @@ x=df.drop("species",axis=1)
 y=df['species']
 
 with st.expander('Data visualization'):
-  st.scatter_chart(data=df,x='bill_length_mm',y='body_mass_g',color='species')
+  chart = alt.Chart(df).mark_circle(size=60).encode(
+    x='bill_length_mm',
+    y='body_mass_g',
+    color='species',
+    tooltip=['species', 'bill_length_mm', 'body_mass_g']
+).interactive()
+  
+  st.altair_chart(chart, use_container_width=True)
