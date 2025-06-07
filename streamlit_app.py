@@ -1,5 +1,8 @@
 import streamlit as st
+import pandas as pd
 
-st.title('🎈 App Name')
+st.title(' ')
 
-st.write('Hello world!')
+st.info('')
+
+df=pd.read_csv(''https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
