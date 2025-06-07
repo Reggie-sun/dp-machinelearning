@@ -34,7 +34,7 @@ def slider():
 inout_data={}
 
 for lables,key in slider_lables:
-  st.slider(laber,min_value=float(0), max_value=float(df[key].max()), value=float(df[key].mean())
+  input_data[key]=st.slider(laber,min_value=float(0), max_value=float(df[key].max()), value=float(df[key].mean()))
   
   
 
