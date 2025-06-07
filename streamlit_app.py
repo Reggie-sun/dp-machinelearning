@@ -10,6 +10,6 @@ with st.expander("Data"):
   df
 x=df.drop("species",axis=1)
 y=df['species']
-x
-y
+st.write(x)
+st.write(y)
   
