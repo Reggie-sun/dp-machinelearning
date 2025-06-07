@@ -12,4 +12,4 @@ x=df.drop("species",axis=1)
 y=df['species']
 
 with st.expander('Data visualization')
-  st.st.scatter_chart(df,x,y,x='bill_length_mm',y='body_mass_g',color='species')
+  st.st.scatter_chart(df,x='bill_length_mm',y='body_mass_g',color='species')
